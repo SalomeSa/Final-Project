@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>About us</title>
+</head>
+<body>
+    <header>
+        <header class="flex">
+            <a class="logo" href="index.html">logo</a>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a class="active" href="aboutus.html">about us</a></li>
+                    <li><a href="findservices.html">find services</a></li>
+                    <li><a href="articles.html">articles</a></li>
+                    <li><a href="contactus.html">contact us</a></li>
+                </ul>
+            </nav>
+            <a href="register.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+        </header>
+    </header>
+    <main>
+        <section class="goals-container">
+            <h3 class="heading3">our goals</h3>
+            <img class="pic1" src="img/pet.jpg" alt="petpic">
+            <p class="goaltext">Pets are big responsibility that you take until the end of their lives. Georgian reality shows that people are taking this responsibility too lightly which brings us to the main problem - stray animals.</p>
+            <p class="goaltext">The aim of this website is to provide information and educate people to raise thei pets in the best possible way. For people to make right decisions and also provide information on how to decrease the numbers of strays as well as how to take care of them. Stray animals are the outcome of our irresponsible behaivor in firsthand.</p>
+        </section>
+        <section class="team-container">
+            <h3 class="heading3">our team</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                   <img class="carouselpic" src="img/salome.jpg" alt="salome">
+                    <p>Salome - Volunteer</p>
+                </div>
+                <div class="item">
+                    <img class="carouselpic" src="img/nino2.jpg" alt="nino">
+                     <p>Nino - Volunteer</p>
+                 </div>
+                 <div class="item">
+                    <img class="carouselpic" src="img/elene.jpg" alt="elene">
+                     <p>Elene - Volunteer</p>
+                 </div>
+                 <div class="item">
+                    <img class="carouselpic" src="img/dea.jpg" alt="dea">
+                     <p>Dea - Volunteer</p>
+                 </div>
+            </div>
+
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="ending">
+            <div class="social">
+                <div class="fb">
+                    <a href="https://www.facebook.com/groups/1389252608249562/?ref=share"> <i class="fa-brands fa-square-facebook"></i></a>
+                </div>
+                <div class="insta">
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <i class="fa-solid fa-copyright"></i>
+                <p class="right">All rights reserved</p>
+            </div>
+        </div>
+        <div class="messagecontainer">
+            <p class="message" id="messagebutton" onclick="show()">
+                Send us a message
+            </p>
+            <div class="messagebox" id="messagebox">
+                <div class="boxheader">
+                    <p>Write your message</p>
+                    <p class="close" onclick="hide()">&#x2715</p>
+                </div>
+                <div class="boxmain">
+                    <input type="text" name="fullname" id="fullname" placeholder="Full name">
+                    <input type="text" name="email" id="email" placeholder="E-mail address">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                    <p class="send" onclick="hide()">SEND</p>
+                </div>
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/d933acbc9b.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="js/script.js"></script>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,327 @@
+ /* HOME PAGE */
+
+.body{
+    font-family: sans-serif;
+}
+
+.flex{
+    width: 1100px;
+    height: 50px;
+    margin: 0 auto;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.logo{
+    background-image: url(../img/1.png);
+    width: 110px;
+    height: 110px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-indent: -99999px;
+    display: flex;
+    vertical-align: middle;
+    z-index: 1;
+}
+
+.nav-bar{
+    vertical-align: middle;
+}
+
+header ul{
+    display: flex;
+}
+
+header li{
+    margin-left: 30px;
+}
+
+header a, .header1{
+    font-size: 16px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #464646
+}
+
+header .fa-right-to-bracket{
+    font-size: 25px;
+    color: #537b3a;
+}
+
+.background-pic{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.texts{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 150px;
+    right: 50px;
+}
+
+.header1{
+    font-size: 20px;
+    color: #537b3a;
+}
+
+.text1{
+    font-size: 14px;
+    color: #464646;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.icon{
+    width: 110px;
+    height: 20px;
+    border: 3px solid #537b3a;
+}
+
+.logo, header li, header .fa-right-to-bracket{
+    cursor: pointer;
+}
+
+header li a:hover{
+    font-size: 20px;
+    color:#ffd230;   
+}
+
+header .fa-right-to-bracket:hover{
+    font-size: 27px;
+    color:#ffd230;    
+}
+
+.active{
+    color:#537b3a;
+}
+
+
+/* ABOUT US */
+
+.goals-container{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.heading3{
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.pic1{
+    width: 500px;
+    border-radius: 25%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.goaltext{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Slider */
+
+.item{
+    height: 400px;
+    overflow: hidden;
+}
+
+.carouselpic{
+    position: relative;
+}
+
+.item p{
+    position: absolute;
+    bottom: 10px;
+    left: 25%;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000
+}
+
+.owl-theme, .owl-nav{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-theme, .owl-nav [class*=owl-]{
+    font-size: 80px;
+    color: #ffffff;
+}
+
+/* message box */
+
+.message{
+    width: 300px;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #537b3a;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+.message:hover{
+    cursor: pointer ;
+}
+
+
+.messagebox{
+    width: 300px;
+    border: 2px solid #000000;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 2;
+}
+
+.boxheader{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #000000;
+}
+
+.close{
+    padding: 5px;
+    font-weight: 600;
+}
+.boxmain{
+    width: 100%;
+    padding: 10px;
+}
+
+.boxmain input, .boxmain textarea{
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border: 2px solid #000000;
+    margin-bottom: 20px;
+    
+}
+
+.boxmain textarea{
+    resize: none;
+}
+
+.boxmain .send{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #ffd230;
+    color: #ffffff;
+}
+
+.send:hover, .close:hover{
+    cursor: pointer;
+}
+
+.message, .messagebox, .boxmain input, .boxmain textarea, .send{
+    border-radius: 20px;
+}
+
+/* map */
+
+.maps{
+    width: 100%;
+    margin-top: 100px;
+}
+
+/* registration, log in form */
+
+.regpic{
+    background-image: url(../img/regpic.jpg);
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-indent: -99999px;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+
+.regform{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+
+.regform p{
+    color: #000000;
+}
+
+form input{
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-left: 5px;
+    outline: none;
+}
+
+.remember{
+    margin-top: 10px;
+}
+
+form input[type="submit"]{
+    background-color: #4e9436;
+}
+form input[type="submit"]:hover{
+    background-color: #69b450;
+    cursor: pointer;
+}
+
+.answer{
+    font-size: 18px;
+    color: rgb(206, 20, 20);
+    background-color: #ffffff;
+}
+
+/* footer */
+
+.ending{
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    background-color: #403b3b;
+    padding-left: 47%;
+}
+
+.social{
+    display: flex;
+    padding-top: 75px;
+}
+
+footer .fa-square-facebook, footer .fa-square-instagram{
+    font-size: 50px;
+    color: #ffffff;
+    margin-right: 5px;
+}
+
+footer .copyright{
+    margin-top: 50px;
+    display: flex;
+    font-size: 12px;
+    color: #ffffff;
+}
+
