@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Information Platform">
-    <meta name="keywords" content="pet, stray, care, services, ">
+    <meta name="description" content="Information Platform - Get all the information on how to take of your pets.">
+    <meta name="keywords" content="pet, stray, care, services, veterinary">
     <meta name="author" content="Salome Shakarashvili">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,16 +17,21 @@
 <body class="body">
     <header class="flex">
         <a class="logo" href="index.html">logo</a>
-        <nav class="nav-bar">
+        <nav class="nav-bar" id="nav-bar">
             <ul>
                 <li><a class="active" href="index.html">home</a></li>
                 <li><a href="aboutus.html">about us</a></li>
                 <li><a href="findservices.html">services</a></li>
                 <li><a href="articles.html">articles</a></li>
-                <li><a href="donate.html">donate</a></li>
+                <li><a href="contactus.html">contact us</a></li>
             </ul>
         </nav>
-        <a href="register.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+        <div class="burger" id="burger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="donate">
+            <a class="give" href="donate.html">donate</a>
+        </div>
     </header>
     <main>
         <section class="home-section1">
@@ -47,7 +52,7 @@
             <div class="home-container3">
                 <div class="section2text">
                     <h5 class="heading5">services</h5>
-                    <p class="text2">We are not the service providers, however we will bring you the information of all the services providers in the field. You will find information from vet clinics to dog walkers, from petshops to petsitters.Find the closest services to your home so taking care of your loved one could be quick and easy...<a class="read" href="findservices.html">read more</a></p>
+                    <p class="text2">We are not the service providers, however we will bring you the information of all the service providers in the field. You will find information from vet clinics to dog walkers, from petshops to petsitters. Find the closest services to your home so taking care of your loved one would be quick and easy...<a class="read" href="findservices.html">read more</a></p>
                 </div>
                 <img class="section2pic" src="img/services.jpg" alt="team">
             </div>
@@ -71,7 +76,7 @@
                     <ul>
                         <li class="contact-li">
                             <i class="fa-regular fa-envelope"></i>
-                            <a class="text6" href="#">info@petplatform.ge</a></li>
+                            <a class="text6" href="#">petinfo@gmail.ge</a></li>
                         <li class="contact-li">
                             <i class="fa-solid fa-phone"></i>
                             <a class="text6" href="#">+955 559 000 000</a></li>
