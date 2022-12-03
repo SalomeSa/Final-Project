@@ -12,27 +12,32 @@
     <title>About us</title>
 </head>
 <body>
-    <header>
-        <header class="flex">
-            <a class="logo" href="index.html">logo</a>
-            <nav class="nav-bar">
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a class="active" href="aboutus.html">about us</a></li>
-                    <li><a href="findservices.html">find services</a></li>
-                    <li><a href="articles.html">articles</a></li>
-                    <li><a href="contactus.html">contact us</a></li>
-                </ul>
-            </nav>
-            <a href="register.html"><i class="fa-solid fa-right-to-bracket"></i></a>
-        </header>
+    <header class="flex">
+        <a class="logo" href="index.html">logo</a>
+        <nav class="nav-bar" id="nav-bar">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a class="active" href="aboutus.html">about us</a></li>
+                <li><a href="findservices.html">services</a></li>
+                <li><a href="articles.html">articles</a></li>
+                <li><a href="contactus.html">contact us</a></li>
+            </ul>
+        </nav>
+        <div class="burger" id="burger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="donate">
+            <a class="give" href="donate.html">donate</a>
+        </div>
     </header>
     <main>
         <section class="goals-container">
-            <h3 class="heading3">our goals</h3>
             <img class="pic1" src="img/pet.jpg" alt="petpic">
-            <p class="goaltext">Pets are big responsibility that you take until the end of their lives. Georgian reality shows that people are taking this responsibility too lightly which brings us to the main problem - stray animals.</p>
-            <p class="goaltext">The aim of this website is to provide information and educate people to raise thei pets in the best possible way. For people to make right decisions and also provide information on how to decrease the numbers of strays as well as how to take care of them. Stray animals are the outcome of our irresponsible behaivor in firsthand.</p>
+            <div class="text5">
+                <h3 class="heading3">our goals</h3>
+                <p class="goaltext">Pets are big responsibility that you take until the end of their lives. Georgian reality shows that people are taking this responsibility too lightly which brings us to the main problem - stray animals.</p>
+                <p class="goaltext">The aim of this website is to provide information and educate people to raise thei pets in the best possible way. For people to make right decisions and also provide information on how to decrease the numbers of strays as well as how to take care of them. Stray animals are the outcome of our irresponsible behaivor in firsthand.</p>
+            </div>   
         </section>
         <section class="team-container">
             <h3 class="heading3">our team</h3>
@@ -54,25 +59,47 @@
                      <p>Dea - Volunteer</p>
                  </div>
             </div>
-
+        </section>
+        <section class="career">
+            <div class="text4">
+                <h3 class="heading3">Join our team</h3>
+                <p>We are constantly looking for volunteers who would help to answer the questions of the website users, adding articles, adding services, developing the platform. If you have experience in communication, copywriting, web-development or anything else that might help us go forward, be kind and give us a call.</p>
+            </div>
         </section>
 
 
     </main>
     <footer>
         <div class="ending">
+            <img class="logo2" src="img/logo2.png" alt="logo">
+            <div class="contactbox">
+                <h6 class="heading6">contacts</h6>
+                <ul>
+                    <ul>
+                        <li class="contact-li">
+                            <i class="fa-regular fa-envelope"></i>
+                            <a class="text6" href="#">petinfo@gmail.ge</a></li>
+                        <li class="contact-li">
+                            <i class="fa-solid fa-phone"></i>
+                            <a class="text6" href="#">+955 559 000 000</a></li>
+                        <li class="contact-li">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <a class="text6" href="#">Ana Politkovskaia, Saburtalo, Tbilisi</a></li>
+                    </ul>
+                </ul>
+            </div>
             <div class="social">
                 <div class="fb">
-                    <a href="https://www.facebook.com/groups/1389252608249562/?ref=share"> <i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"> <i class="fa-brands fa-square-facebook"></i></a>
                 </div>
                 <div class="insta">
                     <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
                 </div>
             </div>
-            <div class="copyright">
-                <i class="fa-solid fa-copyright"></i>
-                <p class="right">All rights reserved</p>
-            </div>
+        </div>
+        <div class="copyright">
+            <i class="fa-solid fa-copyright"></i>
+            <p class="right">All rights reserved</p>
         </div>
         <div class="messagecontainer">
             <p class="message" id="messagebutton" onclick="show()">
@@ -91,10 +118,10 @@
                 </div>
             </div>
         </div>
-        <script src="https://kit.fontawesome.com/d933acbc9b.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="js/script.js"></script>
     </footer>
+    <script src="https://kit.fontawesome.com/d933acbc9b.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
