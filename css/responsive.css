@@ -2,6 +2,19 @@
     .flex{
         max-width: 90%;
     }
+
+    .service-section2{
+        max-width: 80%;
+    }
+
+    .event-section2{
+        max-width: 80%;
+        flex-wrap: wrap;
+    }
+
+    .eventbox{
+        margin-bottom: 20px;
+    }
 }
     
 
@@ -18,15 +31,42 @@
         margin-top: 35px;
     }
 
-}
+    .goals-container{
+        max-width: 600px;
+        margin: 0 auto;
+    }
 
-@media (max-width: 950px){
+    .text5, .text4{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .pic1{
+        margin-top: 50px;
+    }
+
     .section2pic{
         margin-top: 5%;
     }
-
 }
 
+@media (max-width: 850px){
+    .articlebox{
+        flex-direction: column;
+        max-width: 400px;
+    }
+    .textbox-article{
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 720px){
+    .event-section2{
+        max-width: 80%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 
 @media (max-width: 670px){
     .ending, .copyright{
@@ -38,9 +78,45 @@
 
 }
 
+@media (max-width: 550px){
+    .pic1{
+        width: 80%;
+    }
+
+    .text5, .text4{
+        width: 80%;
+    }
+
+    .text4{
+        left: 20px;
+        text-align: center;
+    }
+
+    .burger{
+        margin-top: 50px;
+    }
+    
+}
+
+@media (max-width: 500px){
+    .regform{
+        left: 0;
+    }
+
+    .input, .submit{
+        max-width: 300px;
+        align-items: center;
+    }
+
+}
+
 @media (max-width: 440px){
     .section2pic{
         width: 90%;
+    }
+
+    .articlebox, .articlepic, .textbox-article{
+        max-width: 300px;
     }
 }
     
@@ -54,7 +130,7 @@
         margin-bottom: 10px;
     }
 
-    .home-section1{
+    .home-section1, .reg-section1{
         margin-top: 180px;
         background-position: 70%;
     }
@@ -67,5 +143,16 @@
     .section2pic{
         width: 80%;
     }
+
+    .pic1{
+        margin-top: 200px;
+    }
+
+    .graybox2{
+        margin-top: 200px;
+    }
+
+   
+
 }
 

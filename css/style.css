@@ -1,3 +1,14 @@
+ /* variables */
+
+ :root{
+    --main-color1: #464646;
+    --main-color2: #537b3a;
+    --main-color3: #ffd230;
+    --main-font1: sans-serif;
+    --main-font2: 'Exo 2';
+    --main-font3: 'Bebas Neue';
+ }
+ 
  /* HOME PAGE */
 
 .flex{
@@ -42,8 +53,8 @@ header a, .header1{
     font-size: 16px;
     font-weight: bolder;
     text-transform: uppercase;
-    color: #464646;
-    font-family: sans-serif;
+    color: var(--main-color1);
+    font-family: var(--main-font1);
 }
 
 header a{
@@ -59,7 +70,7 @@ header li a::before{
     content: "";
     width: 0%;
     height: 3px;
-    background-color: #537b3a;
+    background-color: var(--main-color2);
     position: absolute;
     bottom: -5px;
     left: 50%;
@@ -73,7 +84,7 @@ header li a::after{
     content: "";
     width: 0%;
     height: 3px;
-    background-color: #537b3a;
+    background-color: var(--main-color2);
     position: absolute;
     bottom: -5px;
     right: 50%;
@@ -84,12 +95,12 @@ header li a:hover::after{
 }
 
 .fa-right-to-bracket{
-    color: #403b3b;
-    font-size: 18px;
+    color: var(--main-color1);
+    font-size: 20px;
 }
 
 .fa-right-to-bracket:hover{
-    color: #537b3a;
+    color: var(--main-color2);
 }
 
 .home-section1{
@@ -105,14 +116,14 @@ header li a:hover::after{
 
 .graybox{
     width: 100%;
-    background-color: #403b3b;
+    background-color: var(--main-color1);
     opacity: 90%;
     position: absolute;
     bottom: 2px;
 }
 
 .box-heading{
-    font-family: sans-serif;
+    font-family: var(--main-font1);
     font-weight: bold;
     font-size: 20px;
     text-transform: uppercase;
@@ -126,7 +137,7 @@ header li a:hover::after{
 }
 
 .active{
-    color:#537b3a;
+    color: var(--main-color2);
 }
 
 .home-section2{
@@ -157,7 +168,7 @@ header li a:hover::after{
 }
 
 .heading5{
-    font-family: 'Exo 2';
+    font-family: var(--main-font2);
     font-size: 25px;
     color: #464646;
     text-transform: uppercase;
@@ -169,8 +180,8 @@ header li a:hover::after{
 }
 
 .home-container3{
-    background-color: #403b3b;
-    padding: 30px 0;
+    background-color: var(--main-color1);
+    padding: 30px 0px;
 }
 
 .home-container3 .heading5, .home-container3 .text2{
@@ -185,14 +196,16 @@ header li a:hover::after{
 /* ABOUT US */
 
 .goals-container{
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     margin-top: 100px;
     display: flex;
+    flex-direction: column;
 }
 
-.text5{
+.text5, .text4{
     width: 400px;
+    margin: 0 auto;
 }
 
 .heading3{
@@ -204,7 +217,7 @@ header li a:hover::after{
 }
 
 .pic1{
-    width: 500px;
+    max-width: 500px;
     border-radius: 25%;
     margin: 0 auto;
     margin-bottom: 40px;
@@ -226,19 +239,17 @@ header li a:hover::after{
 }
 
 .text4{
-    width: 400px;
     color: #ffffff;
     position: absolute;
     top: 150px;
     left: 100px;
 }
 
-
-
 /* Slider */
 
 .item{
-    height: 400px;
+    width: 400px;
+    height: 350px;
     overflow: hidden;
 }
 
@@ -274,16 +285,17 @@ header li a:hover::after{
 
 .messagecontainer, .messagebox{
     background-color: #b3aeae;
-    font-family: 'Bebas Neue';
+    font-family: var(--main-font3);
 }
 
 .message{
     width: 300px;
     padding: 15px;
-    font-family: 'Bebas Neue';
+    font-family: var(--main-font3);
     font-weight: bold;
     text-align: center;
-    background-color: #537b3a;
+    background-color: var(--main-color2);
+    opacity: 90%;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -306,7 +318,7 @@ header li a:hover::after{
 }
 
 .boxheader{
-    font-family: 'Bebas Neue';
+    font-family: var(--main-font3);
     width: 100%;
     padding: 10px;
     display: flex;
@@ -325,7 +337,7 @@ header li a:hover::after{
 }
 
 .boxmain input, .boxmain textarea{
-    font-family: 'Bebas Neue';
+    font-family: var(--main-font3);
     width: 100%;
     padding: 15px;
     outline: none;
@@ -342,7 +354,7 @@ header li a:hover::after{
     width: 100%;
     text-align: center;
     padding: 15px;
-    background-color: #ffd230;
+    background-color: var(--main-color3);
     color: #ffffff;
 }
 
@@ -366,7 +378,7 @@ header li a:hover::after{
 
 .graybox2{
     width: 100%;
-    background-color: #403b3b;
+    background-color: var(--main-color1);
     opacity: 90%;
     margin-top: 55px;
 }
@@ -388,12 +400,12 @@ header li a:hover::after{
 }
 
 .service-heading{
-    font-family: sans-serif;
+    font-family: var(--main-font1);
     font-size: 18px;
     font-weight: bold;
     color: #403b3b;
     text-transform: uppercase;
-    text-shadow: 1px 1px #537b3a;
+    text-shadow: 1px 1px var(--main-color2);
 }
 
 .textbox{
@@ -402,7 +414,7 @@ header li a:hover::after{
 }
 
 .service-heading:hover{
-    color: #ffd230;
+    color: var(--main-color3);
 }
 
 .hotel{
@@ -425,7 +437,7 @@ header li a:hover::after{
 /* articles */
 
 .articlebox{
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     margin-top: 30px;
@@ -439,11 +451,11 @@ header li a:hover::after{
 }
 
 .article-heading{
-    font-family: 'Bebas Neue';
+    font-family: var(--main-font3);
     font-size: 26px;
     font-weight: 900;
     text-transform: uppercase;
-    color: #537b3a;
+    color: var(--main-color2);
 }
 
 .textbox-article{
@@ -452,7 +464,7 @@ header li a:hover::after{
 }
 
 .article-text{
-    font-family: 'Bebas Neue';
+    font-family: var(--main-font3);
     font-size: 18px;
     margin-top: 20px;
     opacity: 70%;
@@ -463,10 +475,8 @@ header li a:hover::after{
 }
 
 .eventtext{
-    color: #403b3b;
+    color: var(--main-color1);
 }
-
-
 
 /* events */
 
@@ -510,7 +520,7 @@ header li a:hover::after{
     height: 50px;
     margin: 0 auto;
     padding-top: 10px;
-    background-color: #ffd230;
+    background-color: var(--main-color3);
     font-size: 24px;
     text-align: center;
     text-transform: uppercase;
@@ -519,11 +529,11 @@ header li a:hover::after{
 }
 
 .eventtext:hover{
-    color: #ffd230;
+    color: var(--main-color3);
 }
 
 .heading5:hover{
-    color: #ffd230;
+    color: var(--main-color3);
 }
 
 /* registration*/
@@ -537,7 +547,7 @@ header li a:hover::after{
     background-position: 25%;
     position: relative;
     margin-top: 50px;
-    opacity: 50%;
+    opacity: 90%;
 }
 
 .regform{
@@ -550,17 +560,20 @@ header li a:hover::after{
     margin-bottom: 5px;
     width: 400px;
     height: 40px;
-    border-style: 1px solid  #403b3b;
+    border-style: 1px solid  var(--main-color1);
 }
 
 .submit{
-    background-color: #ffd230;
+    background-color: var(--main-color3);
     border: none;
 }
 
 .submit:hover{
-    background-color: #537b3a;
+    background-color: var(--main-color2);
+    cursor: pointer;
+    transition: 1s;
 }
+
 
 .registration{
     margin-top: 20px;
@@ -569,7 +582,7 @@ header li a:hover::after{
 /* footer */
 
 footer{
-    background-color: #403b3b;
+    background-color: var(--main-color1);
 }
 
 .ending{
@@ -621,13 +634,13 @@ footer .copyright, .fa-envelope, .fa-phone,.fa-location-dot, .text6{
 }
 
 .text6:hover{
-    color: #ffd230;
+    color: var(--main-color3);
 }
 
 .fa-square-facebook:hover{
-    color: #ffd230;
+    color: var(--main-color3);
 }
 
 .fa-square-instagram:hover{
-    color: #ffd230;
+    color: var(--main-color3);
 }

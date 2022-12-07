@@ -14,9 +14,7 @@
         600:{
             items:3
         },
-        1000:{
-            items:3
-        }
+
     }
 })
 }
@@ -33,28 +31,19 @@ let show = () => {
 
 
 {
-    function check(){
-        let pass1 = document.getElementById("password1").value;
-        let pass2 = document.getElementById("repeat").value;
-    }
+    let input = document.getElementById('submit') 
 
-    console.log(pass1, pass2)
+    input.addEventListener('click', function () {
+        alert("Your log in was successful!")
+    })
 
-    if(pass1 != pass2 || pass1 == "" || pass2 == ""){
-        document.getElementById("answer").
-        innerHTML = "პაროლები არ ედრება ერთმანეთს";
-        document.getElementById("password1").
-        style.border = "1px solid #ff0000";
-        document.getElementById("repeat").
-        style.border = "1px solid #ff0000";
-    }
-      
-    else{
-        document.getElementById("answer").
-        innerHTML = "რეგისტრაცია წამატებულად გაიარეთ";
-        document.getElementById("password1").
-        style.border = "1px solid #000000";
-        document.getElementById("repeat").
-        style.border = "1px solid #000000";
-    }
+}
+
+{
+    let input = document.getElementById('submit1') 
+
+    input.addEventListener('click', function () {
+        alert("Your registration was successful!")
+    })
+
 }
