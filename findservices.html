@@ -1,66 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <title>About us</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Information Platform - Get all the information on how to take of your pets.">
+        <meta name="keywords" content="pet, stray, care, services, veterinary">
+        <meta name="author" content="Salome Shakarashvili">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <title>Services</title>
+    </head>
 <body>
     <header class="flex">
         <a class="logo" href="index.html">logo</a>
-        <nav class="nav-bar">
+        <nav class="nav-bar" id="nav-bar">
             <ul>
                 <li><a class="active" href="index.html">home</a></li>
                 <li><a href="aboutus.html">about us</a></li>
-                <li><a href="findservices.html">find services</a></li>
+                <li><a class="active" href="findservices.html">services</a></li>
                 <li><a href="articles.html">articles</a></li>
-                <li><a href="contactus.html">contact us</a></li>
+                <li><a href="events.html">events</a></li>
             </ul>
         </nav>
-        <a href="register.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+        <div class="burger" id="burger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="login">
+            <a href="register.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+        </div>
     </header>
-    <main></main>
+    <main>
+        <section class="service-section1">
+            <div class="graybox2">
+                <h3 class="box-heading">Find all information about pets and strays in one place!</h3>
+            </div>
+        </section>
+        <section class="service-section2">
+            <div class="veterinay">
+                <div class="greenbox">
+                    <div class="picbox">
+                        <img class="servicepic" src="img/veterinary.jpg" alt="vet">
+                    </div>
+                    <div class="textbox"> <a class="service-heading" href="#">veterinary</a>
+                    </div>   
+                </div>
+            </div>
+            <div class="services">
+                <div class="greenbox">
+                    <div class="picbox">
+                        <img class="servicepic" src="img/hospital.jpg" alt="hospital">
+                    </div>
+                    <div class="textbox"> <a class="service-heading" href="#">hospital</a>
+                    </div>   
+                </div>
+            </div>
+            <div class="services">
+                <div class="greenbox">
+                    <div class="picbox">
+                        <img class="servicepic" src="img/grooming.jpg" alt="grooming">
+                    </div>
+                    <div class="textbox"> <a class="service-heading" href="#">grooming</a>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="services">
+                <div class="greenbox">
+                    <div class="picbox">
+                        <img class="servicepic" src="img/walker.jpg" alt="walker">
+                    </div>
+                    <div class="textbox"> <a class="service-heading" href="#">pet walking</a>
+                    </div>   
+                </div>
+            </div>
+            <div class="services">
+                <div class="greenbox">
+                    <div class="picbox">
+                        <img class="servicepic" src="img/training.jpg" alt="training">
+                    </div>
+                    <div class="textbox"> <a class="service-heading" href="#">pet training</a>
+                    </div>   
+                </div>
+            </div>
+            <div class="services">
+                <div class="greenbox">
+                    <div class="picbox">
+                        <img class="servicepic" src="img/sitting.jpg" alt="hotel">
+                    </div>
+                    <div class="textbox"> <a class="service-heading" href="#">pet sitting</a>
+                    </div>   
+                </div>
+            </div>
+            <div class="services">
+                <div class="greenbox">
+                    <div class="picbox">
+                        <img class="servicepic" src="img/supplies.jpg" alt="supplies">
+                    </div>
+                    <div class="textbox"> <a class="service-heading" href="#">pet supplies</a>
+                    </div>   
+                </div>
+            </div>
+            <div class="services">
+                <div class="greenbox">
+                    <div class="picbox">
+                        <img class="servicepic" src="img/food.jpg" alt="food">
+                    </div>
+                    <div class="textbox"> <a class="service-heading" href="#">pet food</a>
+                    </div>   
+                </div>
+            </div>
+            <div class="services">
+                <div class="greenbox">
+                    <div class="picbox">
+                        <img class="servicepic" src="img/transport.jpg" alt="taxi">
+                    </div>
+                    <div class="textbox"> <a class="service-heading" href="#">Pet Taxi</a>
+                    </div>   
+                </div>
+            </div>
+            <div class="services">
+                <div class="greenbox">
+                    <div class="picbox">
+                        <img class="servicepic" src="img/lostfound.jpg" alt="lostfound">
+                    </div>
+                    <div class="textbox"> <a class="service-heading" href="#">lost and found</a>
+                    </div>   
+                </div>
+            </div>
+            <div class="services">
+                <div class="greenbox">
+                    <div class="picbox">
+                        <img class="servicepic" src="img/adobtion.jpg" alt="adoption">
+                    </div>
+                    <div class="textbox"> <a class="service-heading" href="#">adoption</a>
+                    </div>   
+                </div>
+            </div>
+            <div class="services">
+                <div class="greenbox">
+                    <div class="picbox">
+                        <img class="servicepic" src="img/shelter.jpg" alt="shelter">
+                    </div>
+                    <div class="textbox"> <a class="service-heading" href="#">shelter</a>
+                    </div>   
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="ending">
+            <img class="logo2" src="img/logo2.png" alt="logo">
+            <div class="contactbox">
+                <h6 class="heading6">contacts</h6>
+                <ul>
+                    <ul>
+                        <li class="contact-li">
+                            <i class="fa-regular fa-envelope"></i>
+                            <a class="text6" href="#">petinfo@gmail.ge</a></li>
+                        <li class="contact-li">
+                            <i class="fa-solid fa-phone"></i>
+                            <a class="text6" href="#">+955 559 000 000</a></li>
+                        <li class="contact-li">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <a class="text6" href="#">Ana Politkovskaia, Saburtalo, Tbilisi</a></li>
+                    </ul>
+                </ul>
+            </div>
             <div class="social">
                 <div class="fb">
-                    <a href="https://www.facebook.com/groups/1389252608249562/?ref=share"> <i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"> <i class="fa-brands fa-square-facebook"></i></a>
                 </div>
                 <div class="insta">
                     <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
                 </div>
             </div>
-            <div class="copyright">
-                <i class="fa-solid fa-copyright"></i>
-                <p class="right">All rights reserved</p>
-            </div>
         </div>
-
-        <!-- <section class="home-section2">
-            <div class="home-container2">
-                <div class="home-box1">
-                    <img class="section2pic" src="img/aboutus.jpg" alt="about">
-                    <a class="heading5" href="aboutus.html">about us</a>
-                </div>
-                <div class="home-box1">
-                    <img class="section2pic" src="img/services.jpg" alt="service">
-                    <a class="heading5" href="services.html">services</a>
-                </div>
-                <div class="home-box1">
-                    <img class="section2pic" src="img/articles.jpg" alt="article">
-                    <a class="heading5" href="articles.html">articles</a>
-                </div>
-            </div>
-        </section> -->
-        <section class="home-section3">
-            
-
+        <div class="copyright">
+            <i class="fa-solid fa-copyright"></i>
+            <p class="right">All rights reserved</p>
+        </div>
         <div class="messagecontainer">
             <p class="message" id="messagebutton" onclick="show()">
                 Send us a message
@@ -78,37 +200,10 @@
                 </div>
             </div>
         </div>
-        <script src="https://kit.fontawesome.com/d933acbc9b.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="js/script.js"></script>
     </footer>
+    <script src="https://kit.fontawesome.com/d933acbc9b.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
-
-.home-container2{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    padding: 40px 0 20px 0;
-}
-
-.section2pic{
-    width: 400px;
-    height: 300px;
-}
-
-.heading5{
-    font-family: 'Exo 2';
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #403b3b;
-    bottom: 5px;
-    cursor: pointer;
-}
-
-.heading5:hover{
-    color: #537b3a;
-}

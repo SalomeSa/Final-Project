@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>About us</title>
+</head>
+<body>
+    <header class="flex">
+        <a class="logo" href="index.html">logo</a>
+        <nav class="nav-bar" id="nav-bar">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="aboutus.html">about us</a></li>
+                <li><a href="findservices.html">services</a></li>
+                <li><a href="articles.html">articles</a></li>
+                <li><a class="active" href="events.html">events</a></li>
+            </ul>
+        </nav>
+        <div class="burger" id="burger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="login">
+            <a href="register.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+        </div>
+    </header>
+    <main>
+        <section class="reg-section1">
+            <form action="" class="regform">
+                <div class="login">
+                    <h5 class="heading5">Log In</h5>
+                    <div><input class="input" type="email" name="email" id="email" placeholder="E-mail"></div>
+                    <div><input class="input" type="password" name="password" id="password" placeholder="Password"></div>
+                    <div><input class="submit" type="submit" value="Sumbit"></div>
+                </div>
+                <div class="registration">
+                     <h5 class="heading5">registration form</h5>
+                    <div><input class="input" type="text" name="first name" id="name" placeholder="First Name"></div>
+                    <div><input class="input" type="text" name="last name" id="name" placeholder="Last Name"></div>
+                    <div><input class="input" type="email" name="e-mail" id="e-mail" placeholder="E-mail"></div>
+                    <div><input class="input" type="password" id="password" name="password" placeholder="Password"></div>
+                    <div><input class="submit" type="submit" value="Submit"></div>
+                </div>
+               
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="ending">
+            <img class="logo2" src="img/logo2.png" alt="logo">
+            <div class="contactbox">
+                <h6 class="heading6">contacts</h6>
+                <ul>
+                    <ul>
+                        <li class="contact-li">
+                            <i class="fa-regular fa-envelope"></i>
+                            <a class="text6" href="#">petinfo@gmail.ge</a></li>
+                        <li class="contact-li">
+                            <i class="fa-solid fa-phone"></i>
+                            <a class="text6" href="#">+955 559 000 000</a></li>
+                        <li class="contact-li">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <a class="text6" href="#">Ana Politkovskaia, Saburtalo, Tbilisi</a></li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="social">
+                <div class="fb">
+                    <a href="#"> <i class="fa-brands fa-square-facebook"></i></a>
+                </div>
+                <div class="insta">
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <i class="fa-solid fa-copyright"></i>
+            <p class="right">All rights reserved</p>
+        </div>
+        <div class="messagecontainer">
+            <p class="message" id="messagebutton" onclick="show()">
+                Send us a message
+            </p>
+            <div class="messagebox" id="messagebox">
+                <div class="boxheader">
+                    <p>Write your message</p>
+                    <p class="close" onclick="hide()">&#x2715</p>
+                </div>
+                <div class="boxmain">
+                    <input type="text" name="fullname" id="fullname" placeholder="Full name">
+                    <input type="text" name="email" id="email" placeholder="E-mail address">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                    <p class="send" onclick="hide()">SEND</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/d933acbc9b.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
