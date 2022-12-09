@@ -35,7 +35,7 @@ let show = () => {
 
     input.addEventListener('click', function () {
         alert("Your log in was successful!")
-    })
+    });
 
 }
 
@@ -44,17 +44,16 @@ let show = () => {
 
     input.addEventListener('click', function () {
         alert("Your registration was successful!")
-    })
+    });
 
 }
 
 
 {
-    let navigationBlock = document.getElementById ('nav-bar');
-    let burgerBarBlock = document.getElementById ('burger')
+    let navigationBlock = document.getElementById("navBar");
+    let burgerBarBlock = document.getElementById("burgerBar");
 
-    burgerBarBlock.addEventListener ('click', function (){
-        navigationBlock.classList.add("nav-active");
-    })
-
+    burgerBarBlock.addEventListener("click", function () {
+        navigationBlock.classList.toggle("navActive");
+    });
 }
